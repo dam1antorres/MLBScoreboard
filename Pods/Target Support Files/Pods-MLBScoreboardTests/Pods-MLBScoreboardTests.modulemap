@@ -1,0 +1,6 @@
+framework module Pods_MLBScoreboardTests {
+  umbrella header "Pods-MLBScoreboardTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

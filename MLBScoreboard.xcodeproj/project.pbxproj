@@ -1,0 +1,937 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25A3897AB5EE5D2754050D6D /* Pods_MLBScoreboard_MLBScoreboardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A78D2284517C3B43E9B451 /* Pods_MLBScoreboard_MLBScoreboardUITests.framework */; };
+		5DE49CB9FC5D12A8A3CA535B /* Pods_MLBScoreboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B39EBE0321821CB3A8F1165 /* Pods_MLBScoreboard.framework */; };
+		82CD2AACA812C245E1819E73 /* Pods_MLBScoreboardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8B61EF4D31DD487A127134 /* Pods_MLBScoreboardTests.framework */; };
+		8B20C11B2808D23600A0629C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C11A2808D23600A0629C /* AppDelegate.swift */; };
+		8B20C11D2808D23600A0629C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C11C2808D23600A0629C /* SceneDelegate.swift */; };
+		8B20C1242808D23900A0629C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B20C1232808D23900A0629C /* Assets.xcassets */; };
+		8B20C1272808D23900A0629C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B20C1252808D23900A0629C /* LaunchScreen.storyboard */; };
+		8B20C1322808D23900A0629C /* MLBScoreboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C1312808D23900A0629C /* MLBScoreboardTests.swift */; };
+		8B20C13C2808D23900A0629C /* MLBScoreboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C13B2808D23900A0629C /* MLBScoreboardUITests.swift */; };
+		8B20C13E2808D23900A0629C /* MLBScoreboardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C13D2808D23900A0629C /* MLBScoreboardUITestsLaunchTests.swift */; };
+		8B20C14B28090E4300A0629C /* ScoreboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C14A28090E4300A0629C /* ScoreboardViewController.swift */; };
+		8B20C14F2809132000A0629C /* ScoreboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C14E2809132000A0629C /* ScoreboardViewModel.swift */; };
+		8B20C1522809133B00A0629C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C1512809133B00A0629C /* API.swift */; };
+		8B20C1552809CF1300A0629C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C1542809CF1300A0629C /* Coordinator.swift */; };
+		8B20C15A2809DAF100A0629C /* Scoreboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C1592809DAF100A0629C /* Scoreboard.swift */; };
+		8B20C15C2809DB9600A0629C /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C15B2809DB9600A0629C /* Schedule.swift */; };
+		8B20C15E2809DBC100A0629C /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C15D2809DBC100A0629C /* Game.swift */; };
+		8B20C162280A14D400A0629C /* GameScoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C161280A14D400A0629C /* GameScoreCell.swift */; };
+		8B20C165280A1C4B00A0629C /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C164280A1C4B00A0629C /* TeamView.swift */; };
+		8B20C167280CBA8100A0629C /* GameScoreCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C166280CBA8100A0629C /* GameScoreCellViewModel.swift */; };
+		8B20C169280CBB5600A0629C /* GameStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C168280CBB5600A0629C /* GameStatus.swift */; };
+		8B20C16B280CBBBC00A0629C /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C16A280CBBBC00A0629C /* Match.swift */; };
+		8B20C16D280DE1D800A0629C /* Linescore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C16C280DE1D800A0629C /* Linescore.swift */; };
+		8B20C170280E142700A0629C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C16F280E142700A0629C /* ViewModel.swift */; };
+		8B20C172280E143D00A0629C /* Coordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C171280E143D00A0629C /* Coordinating.swift */; };
+		8B20C174280E19B100A0629C /* GameDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C173280E19B100A0629C /* GameDateView.swift */; };
+		8B20C176280E300C00A0629C /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C175280E300C00A0629C /* NavigationBar.swift */; };
+		8B20C179280E389300A0629C /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C178280E389300A0629C /* UIView+Extensions.swift */; };
+		8B20C17B280E3A3A00A0629C /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C17A280E3A3A00A0629C /* UIColor+Extensions.swift */; };
+		8B20C180280E42D900A0629C /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C17F280E42D900A0629C /* DatePickerViewController.swift */; };
+		8B20C183280E466500A0629C /* Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C182280E466500A0629C /* Segues.swift */; };
+		8B20C187280E4A1500A0629C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C186280E4A1500A0629C /* BaseViewController.swift */; };
+		8B20C189280E515900A0629C /* DatePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C188280E515900A0629C /* DatePickerViewModel.swift */; };
+		8B20C18B280E611E00A0629C /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C18A280E611E00A0629C /* Date+Extensions.swift */; };
+		8B20C18D280E6A1400A0629C /* GameDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C18C280E6A1400A0629C /* GameDetailViewController.swift */; };
+		8B20C18F280E6A3B00A0629C /* GameDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C18E280E6A3B00A0629C /* GameDetailViewModel.swift */; };
+		8B20C191280E7F9500A0629C /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C190280E7F9500A0629C /* Venue.swift */; };
+		8B20C193280E849800A0629C /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20C192280E849800A0629C /* UITableView+Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B20C12E2808D23900A0629C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B20C10F2808D23600A0629C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B20C1162808D23600A0629C;
+			remoteInfo = MLBScoreboard;
+		};
+		8B20C1382808D23900A0629C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B20C10F2808D23600A0629C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B20C1162808D23600A0629C;
+			remoteInfo = MLBScoreboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A463CB6EBB0BD7B851091D5 /* Pods-MLBScoreboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBScoreboard.release.xcconfig"; path = "Target Support Files/Pods-MLBScoreboard/Pods-MLBScoreboard.release.xcconfig"; sourceTree = "<group>"; };
+		4B39EBE0321821CB3A8F1165 /* Pods_MLBScoreboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MLBScoreboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E8B61EF4D31DD487A127134 /* Pods_MLBScoreboardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MLBScoreboardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61743AAC435F51C5CAF18D78 /* Pods-MLBScoreboardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBScoreboardTests.release.xcconfig"; path = "Target Support Files/Pods-MLBScoreboardTests/Pods-MLBScoreboardTests.release.xcconfig"; sourceTree = "<group>"; };
+		7C29A48924A0203C7FA95D84 /* Pods-MLBScoreboard-MLBScoreboardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBScoreboard-MLBScoreboardUITests.release.xcconfig"; path = "Target Support Files/Pods-MLBScoreboard-MLBScoreboardUITests/Pods-MLBScoreboard-MLBScoreboardUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8B20C1172808D23600A0629C /* MLBScoreboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLBScoreboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B20C11A2808D23600A0629C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8B20C11C2808D23600A0629C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8B20C1232808D23900A0629C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B20C1262808D23900A0629C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B20C1282808D23900A0629C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B20C12D2808D23900A0629C /* MLBScoreboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLBScoreboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B20C1312808D23900A0629C /* MLBScoreboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBScoreboardTests.swift; sourceTree = "<group>"; };
+		8B20C1372808D23900A0629C /* MLBScoreboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLBScoreboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B20C13B2808D23900A0629C /* MLBScoreboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBScoreboardUITests.swift; sourceTree = "<group>"; };
+		8B20C13D2808D23900A0629C /* MLBScoreboardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBScoreboardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8B20C14A28090E4300A0629C /* ScoreboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardViewController.swift; sourceTree = "<group>"; };
+		8B20C14E2809132000A0629C /* ScoreboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardViewModel.swift; sourceTree = "<group>"; };
+		8B20C1512809133B00A0629C /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		8B20C1542809CF1300A0629C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8B20C1592809DAF100A0629C /* Scoreboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scoreboard.swift; sourceTree = "<group>"; };
+		8B20C15B2809DB9600A0629C /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		8B20C15D2809DBC100A0629C /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		8B20C161280A14D400A0629C /* GameScoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScoreCell.swift; sourceTree = "<group>"; };
+		8B20C164280A1C4B00A0629C /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
+		8B20C166280CBA8100A0629C /* GameScoreCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScoreCellViewModel.swift; sourceTree = "<group>"; };
+		8B20C168280CBB5600A0629C /* GameStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStatus.swift; sourceTree = "<group>"; };
+		8B20C16A280CBBBC00A0629C /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		8B20C16C280DE1D800A0629C /* Linescore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Linescore.swift; sourceTree = "<group>"; };
+		8B20C16F280E142700A0629C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		8B20C171280E143D00A0629C /* Coordinating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinating.swift; sourceTree = "<group>"; };
+		8B20C173280E19B100A0629C /* GameDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDateView.swift; sourceTree = "<group>"; };
+		8B20C175280E300C00A0629C /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		8B20C178280E389300A0629C /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		8B20C17A280E3A3A00A0629C /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		8B20C17F280E42D900A0629C /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		8B20C182280E466500A0629C /* Segues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segues.swift; sourceTree = "<group>"; };
+		8B20C186280E4A1500A0629C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8B20C188280E515900A0629C /* DatePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewModel.swift; sourceTree = "<group>"; };
+		8B20C18A280E611E00A0629C /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		8B20C18C280E6A1400A0629C /* GameDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailViewController.swift; sourceTree = "<group>"; };
+		8B20C18E280E6A3B00A0629C /* GameDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailViewModel.swift; sourceTree = "<group>"; };
+		8B20C190280E7F9500A0629C /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		8B20C192280E849800A0629C /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		94A78D2284517C3B43E9B451 /* Pods_MLBScoreboard_MLBScoreboardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MLBScoreboard_MLBScoreboardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98A6DC2A296C6B2602D5187 /* Pods-MLBScoreboardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBScoreboardTests.debug.xcconfig"; path = "Target Support Files/Pods-MLBScoreboardTests/Pods-MLBScoreboardTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB650BF9D5CA8E79E1437796 /* Pods-MLBScoreboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBScoreboard.debug.xcconfig"; path = "Target Support Files/Pods-MLBScoreboard/Pods-MLBScoreboard.debug.xcconfig"; sourceTree = "<group>"; };
+		FB20E4A010F42218273D83BA /* Pods-MLBScoreboard-MLBScoreboardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBScoreboard-MLBScoreboardUITests.debug.xcconfig"; path = "Target Support Files/Pods-MLBScoreboard-MLBScoreboardUITests/Pods-MLBScoreboard-MLBScoreboardUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B20C1142808D23600A0629C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DE49CB9FC5D12A8A3CA535B /* Pods_MLBScoreboard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B20C12A2808D23900A0629C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82CD2AACA812C245E1819E73 /* Pods_MLBScoreboardTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B20C1342808D23900A0629C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25A3897AB5EE5D2754050D6D /* Pods_MLBScoreboard_MLBScoreboardUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A2D7E05718E1A0F81417162 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B39EBE0321821CB3A8F1165 /* Pods_MLBScoreboard.framework */,
+				94A78D2284517C3B43E9B451 /* Pods_MLBScoreboard_MLBScoreboardUITests.framework */,
+				4E8B61EF4D31DD487A127134 /* Pods_MLBScoreboardTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B20C10E2808D23600A0629C = {
+			isa = PBXGroup;
+			children = (
+				8B20C1192808D23600A0629C /* MLBScoreboard */,
+				8B20C1302808D23900A0629C /* MLBScoreboardTests */,
+				8B20C13A2808D23900A0629C /* MLBScoreboardUITests */,
+				8B20C1182808D23600A0629C /* Products */,
+				A4B487CDEE08B900F1129A5D /* Pods */,
+				1A2D7E05718E1A0F81417162 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8B20C1182808D23600A0629C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B20C1172808D23600A0629C /* MLBScoreboard.app */,
+				8B20C12D2808D23900A0629C /* MLBScoreboardTests.xctest */,
+				8B20C1372808D23900A0629C /* MLBScoreboardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B20C1192808D23600A0629C /* MLBScoreboard */ = {
+			isa = PBXGroup;
+			children = (
+				8B20C181280E465900A0629C /* Enums */,
+				8B20C177280E387300A0629C /* Extensions */,
+				8B20C16E280E13B100A0629C /* Protocols */,
+				8B20C163280A1C3A00A0629C /* Views */,
+				8B20C160280A14B800A0629C /* Cells */,
+				8B20C1562809D78700A0629C /* Models */,
+				8B20C1532809CF0600A0629C /* Coordinator */,
+				8B20C1502809132F00A0629C /* API */,
+				8B20C14D2809130200A0629C /* ViewModels */,
+				8B20C14C280912E600A0629C /* ViewControllers */,
+				8B20C11A2808D23600A0629C /* AppDelegate.swift */,
+				8B20C11C2808D23600A0629C /* SceneDelegate.swift */,
+				8B20C1232808D23900A0629C /* Assets.xcassets */,
+				8B20C1252808D23900A0629C /* LaunchScreen.storyboard */,
+				8B20C1282808D23900A0629C /* Info.plist */,
+			);
+			path = MLBScoreboard;
+			sourceTree = "<group>";
+		};
+		8B20C1302808D23900A0629C /* MLBScoreboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B20C1312808D23900A0629C /* MLBScoreboardTests.swift */,
+			);
+			path = MLBScoreboardTests;
+			sourceTree = "<group>";
+		};
+		8B20C13A2808D23900A0629C /* MLBScoreboardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8B20C13B2808D23900A0629C /* MLBScoreboardUITests.swift */,
+				8B20C13D2808D23900A0629C /* MLBScoreboardUITestsLaunchTests.swift */,
+			);
+			path = MLBScoreboardUITests;
+			sourceTree = "<group>";
+		};
+		8B20C14C280912E600A0629C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B20C14A28090E4300A0629C /* ScoreboardViewController.swift */,
+				8B20C17F280E42D900A0629C /* DatePickerViewController.swift */,
+				8B20C186280E4A1500A0629C /* BaseViewController.swift */,
+				8B20C18C280E6A1400A0629C /* GameDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8B20C14D2809130200A0629C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8B20C14E2809132000A0629C /* ScoreboardViewModel.swift */,
+				8B20C166280CBA8100A0629C /* GameScoreCellViewModel.swift */,
+				8B20C16F280E142700A0629C /* ViewModel.swift */,
+				8B20C188280E515900A0629C /* DatePickerViewModel.swift */,
+				8B20C18E280E6A3B00A0629C /* GameDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8B20C1502809132F00A0629C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8B20C1512809133B00A0629C /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8B20C1532809CF0600A0629C /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				8B20C1542809CF1300A0629C /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		8B20C1562809D78700A0629C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B20C1592809DAF100A0629C /* Scoreboard.swift */,
+				8B20C15B2809DB9600A0629C /* Schedule.swift */,
+				8B20C15D2809DBC100A0629C /* Game.swift */,
+				8B20C168280CBB5600A0629C /* GameStatus.swift */,
+				8B20C16A280CBBBC00A0629C /* Match.swift */,
+				8B20C16C280DE1D800A0629C /* Linescore.swift */,
+				8B20C190280E7F9500A0629C /* Venue.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B20C160280A14B800A0629C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8B20C161280A14D400A0629C /* GameScoreCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8B20C163280A1C3A00A0629C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B20C164280A1C4B00A0629C /* TeamView.swift */,
+				8B20C173280E19B100A0629C /* GameDateView.swift */,
+				8B20C175280E300C00A0629C /* NavigationBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B20C16E280E13B100A0629C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8B20C171280E143D00A0629C /* Coordinating.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8B20C177280E387300A0629C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8B20C178280E389300A0629C /* UIView+Extensions.swift */,
+				8B20C17A280E3A3A00A0629C /* UIColor+Extensions.swift */,
+				8B20C18A280E611E00A0629C /* Date+Extensions.swift */,
+				8B20C192280E849800A0629C /* UITableView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8B20C181280E465900A0629C /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				8B20C182280E466500A0629C /* Segues.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		A4B487CDEE08B900F1129A5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB650BF9D5CA8E79E1437796 /* Pods-MLBScoreboard.debug.xcconfig */,
+				3A463CB6EBB0BD7B851091D5 /* Pods-MLBScoreboard.release.xcconfig */,
+				FB20E4A010F42218273D83BA /* Pods-MLBScoreboard-MLBScoreboardUITests.debug.xcconfig */,
+				7C29A48924A0203C7FA95D84 /* Pods-MLBScoreboard-MLBScoreboardUITests.release.xcconfig */,
+				B98A6DC2A296C6B2602D5187 /* Pods-MLBScoreboardTests.debug.xcconfig */,
+				61743AAC435F51C5CAF18D78 /* Pods-MLBScoreboardTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B20C1162808D23600A0629C /* MLBScoreboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B20C1412808D23900A0629C /* Build configuration list for PBXNativeTarget "MLBScoreboard" */;
+			buildPhases = (
+				986AB16F53E44AF7F95721BD /* [CP] Check Pods Manifest.lock */,
+				8B20C1132808D23600A0629C /* Sources */,
+				8B20C1142808D23600A0629C /* Frameworks */,
+				8B20C1152808D23600A0629C /* Resources */,
+				B1E670157C3A2703C3BF3F4B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MLBScoreboard;
+			productName = MLBScoreboard;
+			productReference = 8B20C1172808D23600A0629C /* MLBScoreboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B20C12C2808D23900A0629C /* MLBScoreboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B20C1442808D23900A0629C /* Build configuration list for PBXNativeTarget "MLBScoreboardTests" */;
+			buildPhases = (
+				E256C3A515C365BDC83DE6A5 /* [CP] Check Pods Manifest.lock */,
+				8B20C1292808D23900A0629C /* Sources */,
+				8B20C12A2808D23900A0629C /* Frameworks */,
+				8B20C12B2808D23900A0629C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B20C12F2808D23900A0629C /* PBXTargetDependency */,
+			);
+			name = MLBScoreboardTests;
+			productName = MLBScoreboardTests;
+			productReference = 8B20C12D2808D23900A0629C /* MLBScoreboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8B20C1362808D23900A0629C /* MLBScoreboardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B20C1472808D23900A0629C /* Build configuration list for PBXNativeTarget "MLBScoreboardUITests" */;
+			buildPhases = (
+				0A0E9D2BF51321FBA9C9B7BC /* [CP] Check Pods Manifest.lock */,
+				8B20C1332808D23900A0629C /* Sources */,
+				8B20C1342808D23900A0629C /* Frameworks */,
+				8B20C1352808D23900A0629C /* Resources */,
+				BFE6070E12DDBAD111525D3D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B20C1392808D23900A0629C /* PBXTargetDependency */,
+			);
+			name = MLBScoreboardUITests;
+			productName = MLBScoreboardUITests;
+			productReference = 8B20C1372808D23900A0629C /* MLBScoreboardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B20C10F2808D23600A0629C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					8B20C1162808D23600A0629C = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					8B20C12C2808D23900A0629C = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 8B20C1162808D23600A0629C;
+					};
+					8B20C1362808D23900A0629C = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 8B20C1162808D23600A0629C;
+					};
+				};
+			};
+			buildConfigurationList = 8B20C1122808D23600A0629C /* Build configuration list for PBXProject "MLBScoreboard" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B20C10E2808D23600A0629C;
+			productRefGroup = 8B20C1182808D23600A0629C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B20C1162808D23600A0629C /* MLBScoreboard */,
+				8B20C12C2808D23900A0629C /* MLBScoreboardTests */,
+				8B20C1362808D23900A0629C /* MLBScoreboardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B20C1152808D23600A0629C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B20C1272808D23900A0629C /* LaunchScreen.storyboard in Resources */,
+				8B20C1242808D23900A0629C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B20C12B2808D23900A0629C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B20C1352808D23900A0629C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A0E9D2BF51321FBA9C9B7BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MLBScoreboard-MLBScoreboardUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		986AB16F53E44AF7F95721BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MLBScoreboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1E670157C3A2703C3BF3F4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MLBScoreboard/Pods-MLBScoreboard-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MLBScoreboard/Pods-MLBScoreboard-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MLBScoreboard/Pods-MLBScoreboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFE6070E12DDBAD111525D3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MLBScoreboard-MLBScoreboardUITests/Pods-MLBScoreboard-MLBScoreboardUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MLBScoreboard-MLBScoreboardUITests/Pods-MLBScoreboard-MLBScoreboardUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MLBScoreboard-MLBScoreboardUITests/Pods-MLBScoreboard-MLBScoreboardUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E256C3A515C365BDC83DE6A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MLBScoreboardTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B20C1132808D23600A0629C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B20C16D280DE1D800A0629C /* Linescore.swift in Sources */,
+				8B20C18F280E6A3B00A0629C /* GameDetailViewModel.swift in Sources */,
+				8B20C165280A1C4B00A0629C /* TeamView.swift in Sources */,
+				8B20C189280E515900A0629C /* DatePickerViewModel.swift in Sources */,
+				8B20C18B280E611E00A0629C /* Date+Extensions.swift in Sources */,
+				8B20C179280E389300A0629C /* UIView+Extensions.swift in Sources */,
+				8B20C172280E143D00A0629C /* Coordinating.swift in Sources */,
+				8B20C180280E42D900A0629C /* DatePickerViewController.swift in Sources */,
+				8B20C187280E4A1500A0629C /* BaseViewController.swift in Sources */,
+				8B20C17B280E3A3A00A0629C /* UIColor+Extensions.swift in Sources */,
+				8B20C1522809133B00A0629C /* API.swift in Sources */,
+				8B20C15E2809DBC100A0629C /* Game.swift in Sources */,
+				8B20C14F2809132000A0629C /* ScoreboardViewModel.swift in Sources */,
+				8B20C15A2809DAF100A0629C /* Scoreboard.swift in Sources */,
+				8B20C170280E142700A0629C /* ViewModel.swift in Sources */,
+				8B20C193280E849800A0629C /* UITableView+Extensions.swift in Sources */,
+				8B20C167280CBA8100A0629C /* GameScoreCellViewModel.swift in Sources */,
+				8B20C1552809CF1300A0629C /* Coordinator.swift in Sources */,
+				8B20C191280E7F9500A0629C /* Venue.swift in Sources */,
+				8B20C11B2808D23600A0629C /* AppDelegate.swift in Sources */,
+				8B20C14B28090E4300A0629C /* ScoreboardViewController.swift in Sources */,
+				8B20C15C2809DB9600A0629C /* Schedule.swift in Sources */,
+				8B20C169280CBB5600A0629C /* GameStatus.swift in Sources */,
+				8B20C162280A14D400A0629C /* GameScoreCell.swift in Sources */,
+				8B20C183280E466500A0629C /* Segues.swift in Sources */,
+				8B20C18D280E6A1400A0629C /* GameDetailViewController.swift in Sources */,
+				8B20C11D2808D23600A0629C /* SceneDelegate.swift in Sources */,
+				8B20C174280E19B100A0629C /* GameDateView.swift in Sources */,
+				8B20C16B280CBBBC00A0629C /* Match.swift in Sources */,
+				8B20C176280E300C00A0629C /* NavigationBar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B20C1292808D23900A0629C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B20C1322808D23900A0629C /* MLBScoreboardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B20C1332808D23900A0629C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B20C13E2808D23900A0629C /* MLBScoreboardUITestsLaunchTests.swift in Sources */,
+				8B20C13C2808D23900A0629C /* MLBScoreboardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B20C12F2808D23900A0629C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B20C1162808D23600A0629C /* MLBScoreboard */;
+			targetProxy = 8B20C12E2808D23900A0629C /* PBXContainerItemProxy */;
+		};
+		8B20C1392808D23900A0629C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B20C1162808D23600A0629C /* MLBScoreboard */;
+			targetProxy = 8B20C1382808D23900A0629C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B20C1252808D23900A0629C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B20C1262808D23900A0629C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B20C13F2808D23900A0629C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B20C1402808D23900A0629C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B20C1422808D23900A0629C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB650BF9D5CA8E79E1437796 /* Pods-MLBScoreboard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MXULP8QW4N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MLBScoreboard/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mlb.scoreboard.MLBScoreboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B20C1432808D23900A0629C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A463CB6EBB0BD7B851091D5 /* Pods-MLBScoreboard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MXULP8QW4N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MLBScoreboard/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mlb.scoreboard.MLBScoreboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8B20C1452808D23900A0629C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B98A6DC2A296C6B2602D5187 /* Pods-MLBScoreboardTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MXULP8QW4N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mlb.scoreboard.MLBScoreboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MLBScoreboard.app/MLBScoreboard";
+			};
+			name = Debug;
+		};
+		8B20C1462808D23900A0629C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61743AAC435F51C5CAF18D78 /* Pods-MLBScoreboardTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MXULP8QW4N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mlb.scoreboard.MLBScoreboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MLBScoreboard.app/MLBScoreboard";
+			};
+			name = Release;
+		};
+		8B20C1482808D23900A0629C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB20E4A010F42218273D83BA /* Pods-MLBScoreboard-MLBScoreboardUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MXULP8QW4N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mlb.scoreboard.MLBScoreboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MLBScoreboard;
+			};
+			name = Debug;
+		};
+		8B20C1492808D23900A0629C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C29A48924A0203C7FA95D84 /* Pods-MLBScoreboard-MLBScoreboardUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MXULP8QW4N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mlb.scoreboard.MLBScoreboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MLBScoreboard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B20C1122808D23600A0629C /* Build configuration list for PBXProject "MLBScoreboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B20C13F2808D23900A0629C /* Debug */,
+				8B20C1402808D23900A0629C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B20C1412808D23900A0629C /* Build configuration list for PBXNativeTarget "MLBScoreboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B20C1422808D23900A0629C /* Debug */,
+				8B20C1432808D23900A0629C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B20C1442808D23900A0629C /* Build configuration list for PBXNativeTarget "MLBScoreboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B20C1452808D23900A0629C /* Debug */,
+				8B20C1462808D23900A0629C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B20C1472808D23900A0629C /* Build configuration list for PBXNativeTarget "MLBScoreboardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B20C1482808D23900A0629C /* Debug */,
+				8B20C1492808D23900A0629C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B20C10F2808D23600A0629C /* Project object */;
+}
